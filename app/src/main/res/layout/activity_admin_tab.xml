@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/gradient_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView3"
+            android:src="@drawable/ic_supervisor_account_white_48dp"
+            android:layout_weight="1"
+            android:hint="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView4"
+            android:src="@drawable/ic_person_white_48dp"
+            android:layout_weight="1"
+            android:hint="2"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView5"
+            android:src="@drawable/ic_my_location_white_48dp"
+            android:layout_weight="1"
+            android:hint="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="เอกสารทั้งหมด"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:hint="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/text_menu"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:singleLine="false"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ข้อมูลส่วนตัว"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:hint="2"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/text_menu"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="แจ้งตำแหน่ง"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:hint="3"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/text_menu"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout7"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/linearLayout6">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView6"
+            android:src="@drawable/ic_perm_contact_calendar_white_48dp"
+            android:layout_weight="1"
+            android:hint="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView7"
+            android:src="@drawable/ic_assignment_white_48dp"
+            android:layout_weight="1"
+            android:hint="2"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView8"
+            android:src="@drawable/ic_today_white_48dp"
+            android:layout_weight="1"
+            android:hint="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout8"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="รออนุมัติ"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:hint="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/text_menu"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:singleLine="false"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="เอกสารรออนุมัติ"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:hint="2"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/text_menu"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="อนุมัติแล้ว"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:hint="3"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/text_menu"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

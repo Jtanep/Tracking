@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zerother.zero.tracking" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera2" android:required="true" />
+    <uses-feature android:name="android.hardware.camera2.autofocus" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.zerother.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zerother.zero.tracking.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zerother.zero.tracking.DetailallActivity"
+            android:alwaysRetainTaskState="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.zerother.zero.tracking.SenddocActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="ส่งเอกสาร :"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zerother.zero.tracking.DetailallsupActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zerother.zero.tracking.DetailallheadActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zerother.zero.tracking.DetailalllaborActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="เอกสาร :"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zerother.zero.tracking.DetailallmanagerActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="เอกสาร :"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zerother.zero.tracking.DetailallmanageroutActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="เอกสาร :"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zerother.zero.tracking.DetailallreceptionActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="เอกสารประชาสัมพันธ์ :"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zerother.zero.tracking.TabadminActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.TabheadActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.TablaborActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="เมนูหลัก:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.TabmanagerActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="เมนูหลัก:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.TabsupActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.ProfileActivity"
+            android:alwaysRetainTaskState="true"
+            android:icon="@drawable/ic_exit_to_app_white_24dp"
+            android:label="รายละเอียดส่วนตัว:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.ShowdetailDoc"
+            android:alwaysRetainTaskState="true"
+            android:label="รายละเอียดเอกสาร:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.ShowdetailSchedule"
+            android:alwaysRetainTaskState="true"
+            android:label="รายละเอียดงาน:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.TrackerGPS"
+            android:alwaysRetainTaskState="true"
+            android:label="แจ้งตำแหน่งปฏิบัติงาน:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.ShowdetailDocManager"
+            android:alwaysRetainTaskState="true"
+            android:label="รายละเอียดเอกสาร:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.ContactList"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/contact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.SenddocreceptionActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="สร้างเอกสารประชาสัมพันธ์:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.SearchDocument"
+            android:alwaysRetainTaskState="true"
+            android:label="ค้นหาเอกสาร:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.SearchDocumentout"
+            android:alwaysRetainTaskState="true"
+            android:label="ค้นหาเอกสารออก:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.SendmessageActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="ส่งข้อความ:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.MessageTabActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="ข้อความออก:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.MessageTabinActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="ข้อความเข้า:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.SearchMessage"
+            android:alwaysRetainTaskState="true"
+            android:label="ค้นหาข้อความ:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.SendmessageManager"
+            android:alwaysRetainTaskState="true"
+            android:label="ส่งเอกสาร :"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.ContactListMsg"
+            android:alwaysRetainTaskState="true"
+            android:label="เลือกผู้รับข้อความ:"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.PushDocument"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.PushMessage"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.SavescheduleActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zerother.zero.tracking.Listschedule"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.zerother.zero.tracking.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.zerother.zero.tracking" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.zerother.zero.tracking.GcmIntentService" />
+    </application>
+
+</manifest>

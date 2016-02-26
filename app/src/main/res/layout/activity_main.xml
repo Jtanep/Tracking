@@ -1,0 +1,143 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context="com.zerother.zero.tracking.MainActivity"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/bg_green_new">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout3"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical|bottom">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/bacclogo" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="ระบบสนับสนุนการทำงาน"
+                        android:id="@+id/textView"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร"
+                        android:id="@+id/textView19"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:id="@+id/txtusername"
+                android:textColor="#bdbdbd"
+                android:textSize="18dp"
+                android:height="30dp"
+                android:hint="@string/username"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:paddingLeft="15dp"
+                android:background="@android:color/white"
+                android:drawableLeft="@drawable/user25"
+                android:layout_weight="0.27" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/txtpassword"
+                android:password="false"
+                android:textColor="#bdbdbd"
+                android:background="@android:color/white"
+                android:textSize="18dp"
+                android:height="30dp"
+                android:hint="รหัสผ่าน"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:paddingLeft="15dp"
+                android:drawableLeft="@drawable/lock"
+                android:layout_weight="0.21" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="เข้าสู่ระบบ"
+                android:id="@+id/btnlogin"
+                style="@style/AppTheme"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_btn_login_blue"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18"
+                android:text="@string/license"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/text_menu"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+    </LinearLayout>

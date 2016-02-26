@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView2"
+        android:layout_weight="15" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ส่ง"
+        android:id="@+id/btnaddlist"
+        android:layout_weight="0.5"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_btn_login_blue"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

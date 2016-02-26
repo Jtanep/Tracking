@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/bg_green_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="1dp"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView31"
+            android:src="@drawable/bacclogo" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ระบบสนับสนุนการทำงาน"
+                android:id="@+id/textView28"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร"
+                android:id="@+id/textView29"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView3"
+                android:src="@drawable/ic_account_circle_red_48dp"
+                android:layout_weight="1"
+                android:hint="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ข้อมูลส่วนตัว"
+                android:layout_weight="1"
+                android:hint="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView7"
+                android:src="@drawable/ic_receipt_red_48dp"
+                android:layout_weight="1"
+                android:hint="2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ข่าวประชาสัมพันธ์"
+                android:layout_weight="1"
+                android:hint="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView8"
+                android:src="@drawable/ic_note_add_white_48dp"
+                android:layout_weight="1"
+                android:hint="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="สร้างเอกสาร"
+                android:layout_weight="1"
+                android:hint="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:singleLine="false"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout7"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView4"
+                android:src="@drawable/ic_thumbs_up_down_white_48dp"
+                android:layout_weight="1"
+                android:hint="2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="เอกสารรออนุมัติ"
+                android:layout_weight="1"
+                android:hint="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView5"
+                android:src="@drawable/ic_thumb_up_white_48dp"
+                android:layout_weight="1"
+                android:hint="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="เอกสารอนุมัติ"
+                android:layout_weight="1"
+                android:hint="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:singleLine="false"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView6"
+                android:src="@drawable/ic_thumb_down_white_48dp"
+                android:layout_weight="1"
+                android:hint="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="เอกสารไม่อนุมัติ"
+                android:layout_weight="1"
+                android:hint="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:singleLine="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView12"
+                android:src="@drawable/ic_email_yellow_48dp"
+                android:layout_weight="1"
+                android:hint="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ศูนย์ข้อความ"
+                android:layout_weight="1"
+                android:hint="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView14"
+                android:src="@drawable/ic_playlist_add_yellow_48dp"
+                android:layout_weight="1"
+                android:hint="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ส่งข้อความ"
+                android:layout_weight="1"
+                android:hint="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:singleLine="false"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView9"
+                android:src="@drawable/ic_event_note_purple_48dp"
+                android:layout_weight="1"
+                android:hint="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ตารางปฏิบัติงาน"
+                android:layout_weight="1"
+                android:hint="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:singleLine="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView13"
+                android:src="@drawable/ic_insert_invitation_purple_48dp"
+                android:layout_weight="1"
+                android:hint="2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="บันทึกแผนงาน"
+                android:layout_weight="1"
+                android:hint="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView11"
+                android:src="@drawable/ic_exit_to_app_red_48dp"
+                android:layout_weight="1"
+                android:hint="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ออกจากระบบ"
+                android:layout_weight="1"
+                android:hint="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/text_menu"
+                android:singleLine="false"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ค้นหาข้อความ"
+                android:layout_weight="1"
+                android:hint="2"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/bg_green_new"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:text="@string/license"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/text_menu"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>
